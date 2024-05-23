@@ -6,7 +6,6 @@
 
 # Required Libraries
 import pandas as pd, numpy as np # For Data Manipulation
-import scipy.stats as sps # For Probability & Inferential Statistics
 import statsmodels.api as sm, statsmodels.formula.api as smf # For Descriptive Statistics & Regression
 from sklearn.preprocessing import LabelEncoder, OrdinalEncoder # For Encoding Categorical Data [Nominal | Ordinal]
 from sklearn.preprocessing import OneHotEncoder # For Creating Dummy Variables of Categorical Data [Nominal]
@@ -15,7 +14,6 @@ from sklearn.preprocessing import StandardScaler, MinMaxScaler, RobustScaler # F
 from sklearn.model_selection import train_test_split # For Splitting Data into Training & Testing Sets
 import pandas as pd, numpy as np # For Data Manipulation
 import matplotlib.pyplot as plt, seaborn as sns # For Data Visualization
-import scipy.cluster.hierarchy as sch # For Hierarchical Clustering
 from sklearn.cluster import AgglomerativeClustering as agclus, KMeans as kmclus # For Agglomerative & K-Means Clustering
 from sklearn.metrics import silhouette_score as sscore, davies_bouldin_score as dbscore # For Clustering Model Evaluation
 from sklearn.model_selection import train_test_split, RepeatedStratifiedKFold, cross_val_score
@@ -24,7 +22,7 @@ from sklearn.metrics import roc_curve, roc_auc_score, confusion_matrix, precisio
 from sklearn.feature_selection import f_classif
 from sklearn.pipeline import Pipeline
 from sklearn.base import BaseEstimator, TransformerMixin
-from scipy.stats import chi2_contingency
+
 
 
 # In[21]:
