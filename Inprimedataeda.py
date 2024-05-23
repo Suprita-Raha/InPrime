@@ -108,14 +108,6 @@ for col in df_non_cat:
 df_non_cat_float = df1[df_non_cat.columns]
 
 
-# In[29]:
-
-
-ki = KNNImputer(n_neighbors=5, weights='uniform') # weights : uniform | distance | {User Defined}
-ki_fit = ki.fit_transform(df_non_cat_float) 
-df_mdi_ki = pd.DataFrame(ki_fit, columns=df_non_cat_float.columns); df_mdi_ki # Missing Non-Categorical Data Imputed Subset using KNN Imputer
-df_mdi_ki.info()
-
 
 # In[30]:
 
